@@ -11,7 +11,7 @@ if (!function_exists('notify')) {
     /**
      * @param string $message
      */
-    function notify(string $message = null, string $type = 'success', string $title = '', array $options = []): Notify
+    function notify(?string $message = null, string $type = 'success', string $title = '', array $options = []): Notify
     {
         if (null === $message) {
             return app('notify');
